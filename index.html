@@ -59,16 +59,17 @@
             height: auto;
         }
     </style>
-    <script>
-        function prankUser() {
-            setTimeout(() => {
-                document.getElementById("news-content").style.display = "none";
-                document.getElementById("news-image-start").style.display = "none";
-                document.getElementById("news-image-end").style.display = "block";
-                document.getElementById("prank").style.display = "block";
-            }, 60000); // Change content after 60 seconds
-        }
-    </script>
+ <script>
+    function prankUser() {
+        setTimeout(() => {
+            document.getElementById("news-content").style.display = "none";
+            document.getElementById("news-image-start").style.display = "none";
+            document.getElementById("news-image-end").style.display = "block";
+            document.getElementById("prank").style.display = "block";
+        }, 30000); // Change content after 30 seconds
+    }
+</script>
+
 </head>
 <body onload="prankUser()">
     <div class="header">ESPN</div>
