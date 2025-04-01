@@ -53,14 +53,20 @@
             text-align: center;
             margin-top: 20px;
         }
+        #news-image-end {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
     </style>
     <script>
         function prankUser() {
             setTimeout(() => {
                 document.getElementById("news-content").style.display = "none";
-                document.getElementById("news-image").src = "prank-image.jpg";
+                document.getElementById("news-image-start").style.display = "none";
+                document.getElementById("news-image-end").style.display = "block";
                 document.getElementById("prank").style.display = "block";
-            }, 5000); // Change content after 5 seconds
+            }, 60000); // Change content after 60 seconds
         }
     </script>
 </head>
@@ -69,7 +75,7 @@
     <div class="container">
         <h1 class="article-title">Sources: Koa Peat Decommits from Arizona</h1>
         <p class="author">By ESPN Staff Writer | March 31, 2025</p>
-        <img id="news-image" class="news-image" src="fake-news-image.jpg" alt="Breaking News">
+        <img id="news-image-start" class="news-image" src="koa.webp" alt="Breaking News">
         <div id="news-content" class="content">
             <p>In a shocking turn of events, top-ranked high school basketball recruit Koa Peat has announced his decommitment from the University of Arizona. The 5-star prospect, who had previously pledged his commitment to the Wildcats, is now reopening his recruitment, sending shockwaves through the college basketball world.</p>
             <p>Peat, a dominant force on both ends of the floor, had been a key addition to Arizona’s future roster. Many analysts projected him as a game-changer for the Wildcats, with his combination of athleticism, skill, and basketball IQ making him one of the most sought-after recruits in the country.</p>
@@ -78,6 +84,7 @@
             <p>While Peat himself has yet to make an official statement, speculation is already running wild about his next move. The McDonald’s All-American forward remains one of the most coveted prospects in the nation, and wherever he lands, he is expected to make an immediate impact at the college level.</p>
         </div>
         <p id="prank">APRIL FOOLS! Koa Peat is still locked in! 😆🏀</p>
+        <img id="news-image-end" src="puddles.jpg" alt="April Fools Prank">
     </div>
 </body>
 </html>
